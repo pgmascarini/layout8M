@@ -1,12 +1,14 @@
-
 * {
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }
 
 .container {
     text-align: center;
     width: 100%;
-    margin: 1px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #333333;
 }
@@ -56,7 +58,21 @@
     color: #4169E1;
 }
 
-/*-------------------------------Header------------------------------*/
+.card_link {
+    margin: 15px 10px 20px 0px;
+}
+
+.card_link>a {
+    padding: 0;
+}
+
+.little_gris {
+    color: #aaaaaa;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+/*-----------------------------------Header-------------------------------------*/
 
 header {
     padding-top: 5px;
@@ -96,7 +112,7 @@ nav>a {
 }
 
 
-/*-------------------------------Cuatro_Cards------------------------------*/
+/*---------------------------------Cuatro_Cards--------------------------------*/
 
 .text_cards {
     margin: 40px 0;
@@ -128,35 +144,36 @@ nav>a {
     display: block;
 }
 
-button {
-    border: none;
-    margin-bottom: 30px;
-}
-
-i {
-    color: #cccccc;
-    font-size: 24px;
-}
-
 .foto_perfil {
     width: 100px;
     height: 100px;
     align-self: center;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 5px;
-    border-radius: 50% ;
+    border-radius: 50%;
 }
 
 .button_perfil {
-    background-color: #E0FFFF;
+    background-color: #D6EAF8;
     border-radius: 10px;
     margin: 5px auto;
     padding: 5px 10px;
-    font-size: 12px;   
+    font-size: 12px;
 }
 
+.media button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #cccccc;
+}
 
-/*-------------------------------Apuntate------------------------------*/
+.fa-brands {
+    font-size: 20px;
+}
+
+/*------------------------------------Apuntate-----------------------------------*/
 
 .apunte_caja {
     padding-top: 45px;
@@ -197,7 +214,7 @@ i {
 }
 
 
-/*-------------------------------Manifestaciones------------------------------*/
+/*---------------------------------Manifestaciones--------------------------------*/
 
 .manifest {
     margin-top: 50px;
@@ -237,21 +254,13 @@ i {
     margin-top: 20px;
 }
 
-.card_manifest_link {
-    margin: 15px 10px 20px 0px;
-}
-
-.card_manifest_link>a {
-    padding: 0;
-}
-
 i {
     font-size: 14px;
     margin-left: 6px;
 }
 
 
-/*-------------------------------Newsletter------------------------------*/
+/*----------------------------------Newsletter----------------------------------*/
 
 .news_caja {
     padding-top: 40px;
@@ -319,13 +328,15 @@ i {
     color: red;
 }
 
-/*-------------------------------Aprende_Inspira------------------------------*/
+/*--------------------------------Aprende_Inspira-------------------------------*/
 
 .five_cards_caja {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #F2F3F4;
 }
+
+/*--------------dos_cards_superior----------------*/
 
 .two_cards_five {
     display: flex;
@@ -356,14 +367,6 @@ i {
     margin-top: 10px;
 }
 
-.card_five_link {
-    margin: 15px 10px 10px 0px;
-}
-
-.card_five_link>a {
-    padding: 0;
-}
-
 i {
     font-size: 14px;
     margin-left: 6px;
@@ -389,7 +392,177 @@ i {
     border: 1px solid #dddddd;
 }
 
+/*--------------parte_de_texto----------------*/
+
 .text_aprende {
     text-align: center;
-    margin: 80px 200px;
+    margin: 80px 200px 0px 200px;
+}
+
+/*-----------------------------------Tres_Cards---------------------------------*/
+
+.three_cards_caja {
+    padding-bottom: 40px;
+    background-color: #F2F3F4;
+}
+
+.three_cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card_total {
+    width: 36%;
+    box-shadow: 1px 1px 10px 1px #cccccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.card_first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+    text-align: left;
+    margin: 10px 10px;
+}
+
+.card_first>p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 24px;
+    color: #566573;
+}
+
+.card_first>h4 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+i {
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.sup_green {
+    background-color: #98FB98;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sup_green>img {
+    width: 230px;
+    margin: 30px auto;
+}
+
+.sup_gray {
+    background-color: #DCDCDC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sup_gray>img {
+    width: 55px;
+    margin: 30px auto;
+}
+
+.sup_blue {
+    background-color: #AFEEEE;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sup_blue>img {
+    width: 170px;
+    margin: 30px auto;
+}
+
+.link_tres_cards {
+    margin-top: 50px;
+}
+
+.link_tres_cards>a {
+    background-color: #D6EAF8;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+
+/*-------------------------------------Dudas------------------------------------*/
+
+.dudas {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.dudas_both {
+    display: flex;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.dudas_both h5 {
+    margin: 0;
+}
+
+.dudas_left {
+    width: 50%;
+    padding: 10px 40px;
+    margin-right: 50px;
+}
+
+.dudas_left>p {
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.dudas_right {
+    width: 50%;
+    padding: 10px 50px;
+    margin-right: 0px;
+}
+
+.dudas_right>p {
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+/*-------------------------------------Apoyos------------------------------------*/
+
+.apoyos {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.text_apoyos {
+    text-align: center;
+    margin: 10px 280px 40px 280px;
+
+}
+
+.mosaico img {
+    width: 200px;
+}
+
+.mosaico {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/*-------------------------------------Footer------------------------------------*/
+
+footer {
+    padding: 30px 300px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer p {
+    margin: 0;
 }
